@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Helper</title>
+        <link rel="stylesheet" href="style.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+        </header>
+
+        <main>
+            <h2>Websites</h2>
+            <div>
+                <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Search for names...">
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="c1">AI</option>
+                    <option value="c2">IT</option>
+                    <option value="c3">IDE</option>
+                    <option value="c4">Image</option>
+                    <option value="c5">Video</option>
+                    <option value="c6">Voice</option>
+                    <option value="c7">Text</option>
+                    <option value="c8">Education</option>
+                    <option value="c9">Database</option>
+                    <option value="c10">Cloud</option>
+                </select>
+            </div>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <p>&copy; JayP. 2023</p>
+        </footer>
+        <script src="script.min.js"></script>
+    </body>
+</html>
